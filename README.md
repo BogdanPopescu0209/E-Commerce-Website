@@ -1,5 +1,5 @@
 # E-Commerce-Website
- Website developed using JavaScript, PHP, HTML, CSS.
+ Website developed using JavaScript, PHP, HTML, CSS and MongoDB.
 
 • E-commerce website.
 • Customers can add items to a basket and enter their personal details (name, address, email, telephone
