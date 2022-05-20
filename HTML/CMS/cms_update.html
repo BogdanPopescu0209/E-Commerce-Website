@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Edit Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to external file bootstrap-->
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <!--Link to external file style sheet-->
+    <link rel="stylesheet" href="/CSS/style_cms.css">
+    <!--Link to external JavaScript-->
+    <script src="/JavaScript/CMS/update.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <br>
+
+        <!--Top row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Left column-->
+                <div class="col-lg"></div>
+
+                <!--Middle column-->
+                <div class="col-lg">
+
+                    <!--Navigation-->
+                    <nav>
+                        <a href="/HTML/CMS/cms_add.html">Add Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_list.html">&nbsp;List Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_orders.html">&nbsp;List Orders&nbsp;</a>
+                        <a class="current" href="/HTML/CMS/cms_update.html">&nbsp;Edit Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_delete.html">Delete Products/Orders</a>
+                    </nav>
+                </div>
+
+                <!--Right column-->
+                <div class="col-lg">
+
+                    <!--Logout button-->
+                    <form action="/PHP/CMS/cms_logout.php">
+                        <button class="logout">Log Out</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!--Middle row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Column-->
+                <div class="col-lg">
+
+                    <!--Edit product form-->
+                    <h1>Find Product</h1><br><br>
+
+                    <div class="inputFind">
+                        <input type="text" id="id" placeholder="Product ID:"><br><br>
+                        <button class="check" onclick="find_product()">Check Product</button><br><br>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        <!--Server response output-->
+                        <span id="ServerFeedback"></span>
+                        
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Bottom row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Left column-->
+                <div class="col-lg"></div>
+
+                <!--Middle column-->
+                <div class="col-lg">
+
+                    <!--Edit product form-->
+                    <h2>Edit Product</h2><br><br>
+
+                    <div class="inputUpdate">
+
+                        <input type="text" id="name" placeholder="Name:" required>
+                        <input type="text" id="description" placeholder="Description:" required>
+                        <input type="text" id="image_url" placeholder="Image URL:" required>
+                        <input type="text" id="keywords" placeholder="Keywords:" required>
+                        <input type="text" id="contents" placeholder="Net contents:" required>
+                        <input type="text" id="price" placeholder="Price:" required>
+                        <input type="text" id="quantity" placeholder="Stock count:" required><br><br>
+                        <button class="check" onclick="save_product()">Update Product</button><br><br>
+                        
+                    </div>
+                </div>
+
+                <!--Right column-->
+                <div class="col-lg"></div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

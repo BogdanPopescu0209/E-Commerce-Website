@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Log In Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Link to external file bootstrap-->
+  <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+  <!--Link to external file style sheet-->
+  <link rel="stylesheet" href="/CSS/style.css">
+  <!--Link to external JavaScript-->
+  <script src="/JavaScript/ecommerce/registration.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <!--Top row-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg">
+
+          <br>
+          <br>
+          
+          <!--Navigation-->
+          <nav class="navigation">
+            <a href="/HTML/ecommerce/home.html">Home&nbsp;</a>
+            <a href="/HTML/ecommerce/signup.html">&nbsp;Register&nbsp;</a>
+            <a class="current" href="/HTML/ecommerce/login.html">&nbsp;Login&nbsp;</a>
+            <a href="/HTML/ecommerce/orders.html">&nbsp;Orders&nbsp;</a>
+            <a href="/HTML/ecommerce/fruit.html">&nbsp;Fruit&nbsp;</a>
+            <a href="/HTML/ecommerce/basket.html">&nbsp;Basket&nbsp;</a>
+            <a href="/HTML/ecommerce/account.html">&nbsp;MyAccount&nbsp;</a>
+            <a href="" onclick="logout()">Logout</a>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <!--Bottom row-->
+    <div class="container-fluid">
+      <div class="row">
+
+        <!--Left column-->
+        <div class="col-lg"></div>
+
+        <!--Middle column-->
+        <div class="col-lg">
+
+          <img class="regLogo" src="/Images/small.png" alt="fruit.com.png">
+
+          <!--Login form-->
+          <!--Email input-->
+          <div class="form-group">
+            <label class="control-label col-lg" for="email">Email:</label>
+            <div class="col-lg">
+              <input type="email" id="email" class="form-control" placeholder="Enter Email">
+            </div>
+          </div>
+
+          <!--Password input-->
+          <div class="form-group">
+            <label class="control-label col-lg" for="pwd">Password:</label>
+            <div class="col-lg">
+              <input type="password" id="password" class="form-control" placeholder="Enter Password">
+            </div>
+          </div>
+
+          <!--Submit button-->
+          <div class="form-group">
+            <div class="col-lg">
+              <button type="submit" class="submit" onclick="login()">Submit</button>
+            </div>
+          </div>
+
+          <p>
+            <span id="ServerFeedbackLogin"></span>
+          </p>
+
+        </div>
+
+        <!--Right column-->
+        <div class="col-lg"></div>
+
+      </div>
+    </div>
+
+</body>
+
+</html>

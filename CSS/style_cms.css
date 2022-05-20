@@ -1,0 +1,112 @@
+/*Background wallpaper*/
+body{
+    background-image: url(/Images/stock.jpg);
+    background-size: cover;
+}
+
+/*Home page style*/
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.home{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.home .current{
+    background-color: orange;
+}
+
+/*Input style for every page*/
+input{
+    margin-left: 170px;
+}
+
+/*Navigation style*/
+nav{
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+    text-align: center;
+}
+
+nav .current{
+    background-color:orange;
+}
+a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+}
+
+/*Add product page style*/
+.add{
+    margin-left: 200px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+/*Edit product page style*/
+/*Check button design*/
+.check{
+    margin-left: 190px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+/*Delete product page design*/
+.delete{
+    margin-left: 195px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.deleteOrder{
+    margin-left: 200px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+/*Login button design*/
+.login{
+    margin-left: 220px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+/*Logout button style*/
+.logout{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: orange;
+    margin-top: 10px;
+}
+
+/*List products page design*/
+/*List page style*/
+table, th, td {
+    border: 1px solid black;
+    color:black;
+    background-color:white; 
+}
+
+.inputFind{
+    margin-left: 550px;
+}

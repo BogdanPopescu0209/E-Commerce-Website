@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to external file bootstrap-->
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <!--Link to external file style sheet-->
+    <link rel="stylesheet" href="/CSS/style_cms.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <br>
+
+        <!--Top row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Left column-->
+                <div class="col-lg"></div>
+
+                <!--Middle column-->
+                <div class="col-lg">
+
+                    <!--Navigation-->
+                    <nav>
+                        <a class="current" href="/HTML/CMS/cms_add.html">Add Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_list.html">&nbsp;List Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_orders.html">&nbsp;List Orders&nbsp;</a>
+                        <a href="/HTML/CMS/cms_update.html">&nbsp;Edit Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_delete.html">Delete Products/Orders</a>
+                    </nav>
+
+                </div>
+
+                <!--Right column-->
+                <div class="col-lg">
+
+                    <!--Logout button-->
+                    <form action="/PHP/CMS/cms_logout.php">
+                        <button class="logout">Log Out</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <!--Buttom row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Left column-->
+                <div class="col-lg"></div>
+
+                <!--Middle column-->
+                <div class="col-lg">
+
+                    <!--Add product input details-->
+                    <h1>Add Products</h1><br><br>
+
+                    <form action="/PHP/CMS/add_product.php" method="post" enctype="multipart/form-data">
+                        <input type="text" name="name" placeholder="Name:" required>
+                        <input type="text" name="description" placeholder="Description:" required>
+                        <input type="text" name="keywords" placeholder="Keywords:" required>
+                        <input type="file" name="imageToUpload">
+                        <input type="text" name="contents" placeholder="Net contents:" required>
+                        <input type="text" name="price" placeholder="Price:" required>
+                        <input type="text" name="quantity" placeholder="Stock count:" required><br><br>
+                        <button class="add" name="submit" value="Upload Image">Add Product</button>
+                    </form>
+
+
+                </div>
+
+                <!--Right column-->
+                <div class="col-lg"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

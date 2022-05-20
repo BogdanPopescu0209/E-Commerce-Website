@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>List Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to external file bootstrap-->
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <!--Link to external file style sheet-->
+    <link rel="stylesheet" href="/CSS/style_cms.css">
+    <!--Link to external JavaScript-->
+    <script src="/JavaScript/CMS/list_products.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <br>
+
+        <!--Top row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Left column-->
+                <div class="col-lg"></div>
+
+                <!--Middle column-->
+                <div class="col-lg">
+
+                    <!--Navigation-->
+                    <nav>
+                        <a href="/HTML/CMS/cms_add.html">Add Products&nbsp;</a>
+                        <a class="current" href="/HTML/CMS/cms_list.html">&nbsp;List Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_orders.html">&nbsp;List Orders&nbsp;</a>
+                        <a href="/HTML/CMS/cms_update.html">&nbsp;Edit Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_delete.html">Delete Products/Orders</a>
+                    </nav>
+                </div>
+
+                <!--Right column-->
+                <div class="col-lg">
+
+                    <!--Logout button-->
+                    <form action="/PHP/CMS/cms_logout.php">
+                        <button class="logout">Log Out</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!--Bottom row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Column-->
+                <div class="col-lg">
+
+                    <!--Products details-->
+                    <h1>List Products</h1><br><br>
+
+                    <p>
+                        <span id="ServerResponse"></span>
+                    </p>
+
+                    <script>
+
+                        //Output products
+                        window.onload = () => { list_products(); }
+
+                    </script>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

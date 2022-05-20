@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Delete Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to external file bootstrap-->
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <!--Link to external file style sheet-->
+    <link rel="stylesheet" href="/CSS/style_cms.css">
+    <!--Link to external JavaScript-->
+    <script src="/JavaScript/CMS/delete.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <br>
+
+        <!--Top row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Left column-->
+                <div class="col-lg"></div>
+
+                <!--Middle column-->
+                <div class="col-lg">
+
+                    <!--Navigation-->
+                    <nav>
+                        <a href="/HTML/CMS/cms_add.html">Add Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_list.html">&nbsp;List Products&nbsp;</a>
+                        <a href="/HTML/CMS/cms_orders.html">&nbsp;List Orders&nbsp;</a>
+                        <a href="/HTML/CMS/cms_update.html">&nbsp;Edit Products&nbsp;</a>
+                        <a class="current" href="/HTML/CMS/cms_delete.html">Delete Products/Orders</a>
+                    </nav>
+
+                </div>
+
+                <!--Right column-->
+                <div class="col-lg">
+
+                    <!--Logout button-->
+                    <form action="/PHP/CMS/cms_logout.php">
+                        <button class="logout">Log Out</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!--Button row-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--Left column-->
+                <div class="col-lg"></div>
+
+                <!--Middle column-->
+                <!--Delete product input details-->
+                <div class="col-lg">
+                    <h1>Delete Products</h1><br><br>
+
+                    <!--Input product id-->
+                    <input type="text" id="idItem" placeholder="Product ID:"><br><br>
+                    <button class="delete" onclick="delete_product()">Delete Product</button>
+
+                    <br>
+                    <br>
+
+                    <p>
+
+                        <!--Server response-->
+                        <span id="ServerFeedbackItem"></span>
+
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <!--Input order id-->
+                    <input type="text" id="idOrder" placeholder="Order ID:"><br><br>
+                    <button class="deleteOrder" onclick="delete_order()">Delete Order</button>
+
+                    <br>
+                    <br>
+
+                    <p>
+
+                        <!--Server response-->
+                        <span id="ServerFeedbackOrder"></span>
+
+                    </p>
+
+                </div>
+
+                <!--Right column-->
+                <div class="col-lg"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

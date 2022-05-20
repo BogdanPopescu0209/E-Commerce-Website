@@ -1,0 +1,193 @@
+/*Background wallpaper*/
+body{
+  background-image: url(/Images/background.jpg);
+  background-size: cover;
+}
+
+/*Navigation bar style for each page*/
+p{
+    text-align: center;
+}
+
+nav{
+  text-align: center;
+}
+
+nav .current{
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+
+.navigation{
+  margin-top: 150px;
+}
+
+.home{
+  margin-top: 180px;
+}
+
+nav{
+  text-align: center;
+}
+
+nav a:hover{
+  color:greenyellow;
+}
+
+a{
+  color:black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*Sign up and log in page style*/
+form{
+  font-weight: bold;
+}
+
+/*Submit button style*/
+.submit{
+  margin-left: 210px;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: greenyellow;
+}
+
+/*Basket page style*/
+.basket{
+  margin-left: 350px;
+}
+
+.basketF{
+  width: 50px;
+  height: 50px;
+}
+
+/*Increase quantity button style*/
+.add{
+  color: black;
+  background-color: greenyellow;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/*Decrease quantity button style*/
+.take{
+  color: black;
+  background-color: greenyellow;
+  font-weight: bold;
+}
+
+/*Submit order button style*/
+.submitOrder{
+  margin-left: 605px;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: greenyellow;
+}
+
+/*Orders page style*/
+p{
+ font-weight: bold;
+}
+
+table, th, td {
+  margin:auto;
+}
+
+/*Fruit page style*/
+h1{
+  font-size: 15px;
+  text-align: center;
+}
+
+h2{
+  font-size: 20px;
+}
+
+.fruitsStyle{
+  margin-left: 70px;
+  width: 50px;
+}
+
+.fruits{
+  width: 50px;
+  height: 50px;
+  margin-left: 90px;
+}
+
+.addFruit{
+  color: black;
+  background-color: greenyellow;
+  font-weight: bold;
+}
+
+.outputProducts{
+  width: 50px;
+  height: 30px;
+}
+
+/*Table style for all pages*/
+table, th, td {
+  margin: auto;
+}
+
+table, th, td{
+  border: 1px solid black;
+  color:black;
+  border-radius: 5px;
+}
+
+/*Registration logo*/
+.regLogo{
+  margin-left: 150px;
+}
+
+/*Search page style*/
+.searchButton{
+  background-color: greenyellow;
+  border: 1px solid grey;
+  border-left: none;
+  border-radius: 5px;
+}
+
+.sort{
+  margin-left: 30px;
+}
+
+.search{
+  margin-left: 120px;
+  border: 1px solid grey;
+  border-right: none;
+  border-radius: 5px;
+}
+
+.recommendation{
+  margin-left: 150px;
+  background-color: greenyellow;
+  border: 1px solid grey;
+  border-left: none;
+  border-radius: 5px;
+}
+
+.showRecommendation{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
